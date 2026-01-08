@@ -1,0 +1,16 @@
+name: Sample demo file.
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v6
+      - name: list of file
+        run: ls
+      - name: read the file
+        run: cat demo.txt
