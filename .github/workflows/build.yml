@@ -21,7 +21,7 @@ jobs:
           java-version: 11
       - name: mvn commands
         run : mvn clean build package
-        
+      - name: mvn version
         run : mvn -v
         
       
